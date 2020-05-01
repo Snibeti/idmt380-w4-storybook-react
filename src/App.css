@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 
-*{
+body{
 
+  background-color: #13133f;
   font-family: 'Roboto';
+  color: #272776;
+}
+
+h1 {
+  color: var(--warning);
 }
 
 .btn--padding {
@@ -30,7 +36,7 @@
 :root {
 
   --primary: #4628ff;
-  --warning: #ffd028;
+  --warning: #ff288c;
   --white: #ffffff;
   --black: #000000;
 
@@ -61,7 +67,7 @@
 .btn--warning--solid {
 
   background-color: var(--warning);
-  color: var(--black);
+  color: var(--white);
   border: none;
 }
 
@@ -70,7 +76,7 @@
 
   background-color: transparent;
   border: 2px solid var(--primary);
-  color: var(--back);
+  color: var(--white);
 
 }
 
@@ -79,7 +85,7 @@
 
   background-color: transparent;
   border: 2px solid var(--warning);
-  color: var(--black);
+  color: var(--white);
 
 }
 
@@ -93,4 +99,28 @@
 
   padding: 15px 30px;
   font-size: 20px;
+}
+
+
+.card--padding {
+
+  text-align: left;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.5);
+  height: 30%;
+  width: 30vw;
+  display: inline-block;
+  border: 1px solid #f8f3f2;
+  margin: 2em;
+}
+
+.card--padding:hover{
+
+  transform: translateY(-3px);
+}
+
+.text--padding {
+
+  margin: 0 auto;
+  padding: 1.5em;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from "react-dom";
 
 import { Button } from './components/Button';
+import { Card } from './components/Card';
 import './App.css';
 
 function App() {
@@ -9,6 +10,15 @@ function App() {
     <div className="App">
       <h1>Hello World!</h1>
 
+
+    <Card>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque ligula vitae augue laoreet, et malesuada erat viverra. Nullam eu augue consectetur, fringilla metus vel, lobortis leo.</p>
+    </Card>
+
+    <Card>
+    <p>Just showing that you can change the values of the text boxes when using this component, I mean Nullam pellentesque ligula vitae augue laoreet, et malesuada erat viverra. Nullam eu augue consectetur...</p>
+    </Card>
+<br></br>
       <Button 
         onClick={() => {console.log("button clickity clacked")}} 
         type="button"
